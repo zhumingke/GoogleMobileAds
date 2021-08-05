@@ -1,0 +1,6 @@
+framework module Pods_TCLGoogleMobileAds_Example {
+  umbrella header "Pods-TCLGoogleMobileAds_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

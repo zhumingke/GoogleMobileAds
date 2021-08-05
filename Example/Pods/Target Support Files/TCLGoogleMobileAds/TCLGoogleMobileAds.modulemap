@@ -1,0 +1,6 @@
+framework module TCLGoogleMobileAds {
+  umbrella header "TCLGoogleMobileAds-umbrella.h"
+
+  export *
+  module * { export * }
+}

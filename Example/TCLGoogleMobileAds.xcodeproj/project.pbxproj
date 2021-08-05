@@ -22,6 +22,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		6D2F2C29170C546E6E29FCFD /* Pods_TCLGoogleMobileAds_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E66D982B9A7A178D6FC597B /* Pods_TCLGoogleMobileAds_Example.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		78ADCFFB26BBC0A7006963B5 /* TCLADListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ADCFFA26BBC0A7006963B5 /* TCLADListVC.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		E0587988A9008E70DD6A4154 /* Pods_TCLGoogleMobileAds_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1627B9C03FBBF2FB524530 /* Pods_TCLGoogleMobileAds_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -38,8 +39,8 @@
 
 /* Begin PBXFileReference section */
 		00F14F66873C913ECBAA1D4D /* Pods-TCLGoogleMobileAds_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCLGoogleMobileAds_Example.release.xcconfig"; path = "Target Support Files/Pods-TCLGoogleMobileAds_Example/Pods-TCLGoogleMobileAds_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4378E944CE557487FD2816CF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		5955CF8430AE30FB1100500F /* TCLGoogleMobileAds.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TCLGoogleMobileAds.podspec; path = ../TCLGoogleMobileAds.podspec; sourceTree = "<group>"; };
+		4378E944CE557487FD2816CF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5955CF8430AE30FB1100500F /* TCLGoogleMobileAds.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TCLGoogleMobileAds.podspec; path = ../TCLGoogleMobileAds.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* TCLGoogleMobileAds_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCLGoogleMobileAds_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,9 +62,11 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6D1627B9C03FBBF2FB524530 /* Pods_TCLGoogleMobileAds_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCLGoogleMobileAds_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		78ADCFF926BBC0A7006963B5 /* TCLADListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCLADListVC.h; sourceTree = "<group>"; };
+		78ADCFFA26BBC0A7006963B5 /* TCLADListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCLADListVC.m; sourceTree = "<group>"; };
 		7E66D982B9A7A178D6FC597B /* Pods_TCLGoogleMobileAds_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCLGoogleMobileAds_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9901169BE523FCD2E8F7582E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9901169BE523FCD2E8F7582E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		CF41ACCF4B986B41D0A70B9B /* Pods-TCLGoogleMobileAds_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCLGoogleMobileAds_Example.debug.xcconfig"; path = "Target Support Files/Pods-TCLGoogleMobileAds_Example/Pods-TCLGoogleMobileAds_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D9971D0711B7BD2166FE2B6A /* Pods-TCLGoogleMobileAds_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCLGoogleMobileAds_Tests.release.xcconfig"; path = "Target Support Files/Pods-TCLGoogleMobileAds_Tests/Pods-TCLGoogleMobileAds_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EDF02B8902A3B7F240F31152 /* Pods-TCLGoogleMobileAds_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCLGoogleMobileAds_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TCLGoogleMobileAds_Tests/Pods-TCLGoogleMobileAds_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +140,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* TCLViewController.h */,
 				6003F5A6195388D20070C39A /* TCLViewController.m */,
+				78ADCFF926BBC0A7006963B5 /* TCLADListVC.h */,
+				78ADCFFA26BBC0A7006963B5 /* TCLADListVC.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -193,7 +198,6 @@
 				EDF02B8902A3B7F240F31152 /* Pods-TCLGoogleMobileAds_Tests.debug.xcconfig */,
 				D9971D0711B7BD2166FE2B6A /* Pods-TCLGoogleMobileAds_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -249,6 +253,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = zhumingke;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = HHF8TZH7UL;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -259,6 +266,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -303,11 +311,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TCLGoogleMobileAds_Example/Pods-TCLGoogleMobileAds_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/TCLGoogleMobileAds/TCLGoogleMobileAds.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TCLGoogleMobileAds.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -384,6 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* TCLAppDelegate.m in Sources */,
+				78ADCFFB26BBC0A7006963B5 /* TCLADListVC.m in Sources */,
 				6003F5A7195388D20070C39A /* TCLViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -513,6 +528,7 @@
 			baseConfigurationReference = CF41ACCF4B986B41D0A70B9B /* Pods-TCLGoogleMobileAds_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HHF8TZH7UL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TCLGoogleMobileAds/TCLGoogleMobileAds-Prefix.pch";
 				INFOPLIST_FILE = "TCLGoogleMobileAds/TCLGoogleMobileAds-Info.plist";
@@ -529,6 +545,7 @@
 			baseConfigurationReference = 00F14F66873C913ECBAA1D4D /* Pods-TCLGoogleMobileAds_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HHF8TZH7UL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TCLGoogleMobileAds/TCLGoogleMobileAds-Prefix.pch";
 				INFOPLIST_FILE = "TCLGoogleMobileAds/TCLGoogleMobileAds-Info.plist";
