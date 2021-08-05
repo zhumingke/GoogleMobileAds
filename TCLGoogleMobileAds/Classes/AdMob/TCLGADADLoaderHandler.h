@@ -19,7 +19,6 @@
 /// 原生广告，建议引用
 /// @param adUnitID 广告id
 /// @param rootViewController rootViewController
-/// @param superView superView
 /// @param adTypes 广告类型
 /// @param options 广告设置
 - (instancetype)initWithAdUnitID:(NSString *)adUnitID rootViewController:(UIViewController *)rootViewController adTypes:(NSArray *)adTypes options:(NSArray *)options;

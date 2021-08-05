@@ -89,6 +89,11 @@ static NSString * const InterstitialGoogleID = @"ca-app-pub-3940256099942544/441
 }
 
 - (void)setupNativeAdView {
+    //会出发多次回调
+    GADMultipleAdsAdLoaderOptions *multipleAdsOptions =
+          [[GADMultipleAdsAdLoaderOptions alloc] init];
+    multipleAdsOptions.numberOfAds = 5;
+    
     self.loaderHandler = [[TCLGADADLoaderHandler alloc] initWithAdUnitID:LoaderGoogleID rootViewController:self adTypes:nil options:nil];
     self.loaderHandler.gadDelegate = self;
 }
