@@ -45,8 +45,8 @@ PODS:
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
   - PromisesObjC (2.0.0)
-  - TCLGoogleMobileAds (0.1.0):
-    - Google-Mobile-Ads-SDK
+  - TCLGoogleMobileAds (0.1.1):
+    - Google-Mobile-Ads-SDK (~> 8.8.0)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -77,7 +77,7 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
-  TCLGoogleMobileAds: a7c2e296cca25fbfb08bb1f322c5709fe447c52e
+  TCLGoogleMobileAds: bb106de98de6d6ab3f06b32f92886f44e3260fb1
 
 PODFILE CHECKSUM: ed67c69c879b762b170103cc4548181c5cd5d8c0
 
