@@ -1,8 +1,8 @@
 {
   "name": "TCLGoogleMobileAds",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "summary": "TCLGoogleMobileAds.",
-  "description": "横幅、插页、原生、激励广告\n指定Google-Mobile-Ads-SDK版本 ‘8.8.0’",
+  "description": "横幅、插页、原生、激励广告\n指定Google-Mobile-Ads-SDK版本 ‘8.8.0’\n横幅广告自定义尺寸",
   "homepage": "http://gitlab09.tclking.com/ios/compents/tclgooglemobileads",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "http://gitlab09.tclking.com/ios/compents/tclgooglemobileads.git",
-    "tag": "0.1.1"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "9.0"

@@ -69,7 +69,7 @@ static NSString * const InterstitialGoogleID = @"ca-app-pub-3940256099942544/441
 }
 
 - (void)setupADBannerView {
-    self.bannerHandler = [[TCLGADBannerViewHandler alloc] initWithADUnitID:BannerGoogleID rootViewController:self superView:self.view adHeight:100 bottomMargin:30];
+    self.bannerHandler = [[TCLGADBannerViewHandler alloc] initWithADUnitID:BannerGoogleID rootViewController:self superView:self.view adSize:CGSizeMake(320, 70) bottomMargin:35];
     self.bannerHandler.gadDelegate = self;
 }
 
@@ -124,8 +124,15 @@ static NSString * const InterstitialGoogleID = @"ca-app-pub-3940256099942544/441
 
 #pragma mark - TCLGADDelegate
 //横幅广告回调
-- (void)tclGADBannerState:(TCLGADBannerState)tclGADBannerState {
-    
+- (void)tclGADBannerState:(TCLGADBannerState)tclGADBannerState bannerAd:(nonnull GADBannerView *)bannerAd {
+    if (bannerAd) {
+        [self.view addSubview:bannerAd];
+        [self.view addConstraints:@[
+            [NSLayoutConstraint constraintWithItem:bannerAd attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterX multiplier:1 constant:0],
+            [NSLayoutConstraint constraintWithItem:bannerAd attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1 constant:300],
+                                    ]
+         ];
+    }
 }
 
 //激励广告回调

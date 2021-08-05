@@ -54,7 +54,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @optional
 /// 横幅广告状态回调
-- (void)tclGADBannerState:(TCLGADBannerState)tclGADBannerState;
+- (void)tclGADBannerState:(TCLGADBannerState)tclGADBannerState bannerAd:(GADBannerView *)bannerAd;
 
 /// 激励广告状态回调
 - (void)tclGADRewardedState:(TCLGADRewardedState)tclGADRewardedState;

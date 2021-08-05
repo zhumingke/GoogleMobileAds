@@ -18,10 +18,10 @@
 /// 横幅广告：GADBannerView，建议引用
 /// @param adUnitID 广告id
 /// @param rootViewController rootVC
-/// @param superView 父视图
-/// @param adHeight 横幅广告高度，默认50，宽度默认屏幕宽度
-/// @param bottomMargin 距离父视图底部约束
-- (instancetype)initWithADUnitID:(NSString *)adUnitID rootViewController:(UIViewController *)rootViewController superView:(UIView *)superView adHeight:(CGFloat)adHeight bottomMargin:(CGFloat)bottomMargin;
+/// @param superView 父视图，当为nil时才会在代理中返回bannerView
+/// @param adSize 横幅广告尺寸，默认kGADAdSizeBanner
+/// @param bottomMargin 距离父视图底部约束,默认显示底部
+- (instancetype)initWithADUnitID:(NSString *)adUnitID rootViewController:(UIViewController *)rootViewController superView:(UIView *)superView adSize:(CGSize)adSize bottomMargin:(CGFloat)bottomMargin;
 
 ///添加广告
 - (void)addSubviewIn:(UIView *)superView;

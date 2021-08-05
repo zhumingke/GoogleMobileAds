@@ -18,7 +18,7 @@
 
 @implementation TCLGADBannerViewHandler
 
-- (instancetype)initWithADUnitID:(NSString *)adUnitID rootViewController:(UIViewController *)rootViewController superView:(UIView *)superView adHeight:(CGFloat)adHeight bottomMargin:(CGFloat)bottomMargin {
+- (instancetype)initWithADUnitID:(NSString *)adUnitID rootViewController:(UIViewController *)rootViewController superView:(UIView *)superView adSize:(CGSize)adSize bottomMargin:(CGFloat)bottomMargin {
     self = [super init];
     if (self) {
         self.autoShowAD = YES;
@@ -27,11 +27,13 @@
         
         self.gadBannerView = [[GADBannerView alloc] init];
         self.gadBannerView.alpha = 0.0;
-        if (adHeight > 0) {
-            _adSize = GADAdSizeFromCGSize(CGSizeMake(superView.frame.size.width, adHeight));
+        
+        if (adSize.width > 0 && adSize.height > 0) {
+            _adSize = GADAdSizeFromCGSize(adSize);
         } else {
-            _adSize = GADAdSizeFromCGSize(CGSizeMake(superView.frame.size.width, 50));
+            _adSize = kGADAdSizeBanner;
         }
+        
         self.gadBannerView.adSize = _adSize;
         self.gadBannerView.adUnitID = adUnitID;
         self.gadBannerView.rootViewController = rootViewController;
@@ -66,34 +68,39 @@
     [self.gadBannerView loadRequest:[GADRequest request]];
 }
 
-- (void)gadState:(TCLGADBannerState)state {
-    if (self.gadDelegate && [self.gadDelegate respondsToSelector:@selector(tclGADBannerState:)]) {
-        [self.gadDelegate tclGADBannerState:state];
+- (void)gadState:(TCLGADBannerState)state banner:(GADBannerView *)banner {
+    if (self.gadDelegate && [self.gadDelegate respondsToSelector:@selector(tclGADBannerState:bannerAd:)]) {
+        [self.gadDelegate tclGADBannerState:state bannerAd:banner];
     }
 }
 #pragma mark - GADBannerViewDelegate
 - (void)bannerViewDidReceiveAd:(GADBannerView *)bannerView {
-    if (self.autoShowAD && self.gadBannerView.alpha < 1.0) {
+    if (self.autoShowAD && self.gadBannerView.alpha < 1.0 && _superView) {
         [UIView animateWithDuration:0.25 animations:^{
             self.gadBannerView.alpha = 1.0;
         }];
     }
-    [self gadState:TCLGADBannerStateOfDidReceiveAd];
+    if (_superView) {
+        [self gadState:TCLGADBannerStateOfDidReceiveAd banner:nil];
+    } else {
+        bannerView.alpha = 1.0;
+        [self gadState:TCLGADBannerStateOfDidReceiveAd banner:bannerView];
+    }
 }
 - (void)bannerView:(GADBannerView *)bannerView didFailToReceiveAdWithError:(NSError *)error {
-    [self gadState:TCLGADBannerStateOfFailReceiveAd];
+    [self gadState:TCLGADBannerStateOfFailReceiveAd banner:nil];
 }
 - (void)bannerViewDidRecordClick:(GADBannerView *)bannerView {
-    [self gadState:TCLGADBannerStateOfDidClickAd];
+    [self gadState:TCLGADBannerStateOfDidClickAd banner:nil];
 }
 - (void)bannerViewWillPresentScreen:(GADBannerView *)bannerView {
-    [self gadState:TCLGADBannerStateOfWillPresentScreen];
+    [self gadState:TCLGADBannerStateOfWillPresentScreen banner:nil];
 }
 - (void)bannerViewWillDismissScreen:(GADBannerView *)bannerView {
-    [self gadState:TCLGADBannerStateOfWillDismissScreen];
+    [self gadState:TCLGADBannerStateOfWillDismissScreen banner:nil];
 }
 - (void)bannerViewDidDismissScreen:(GADBannerView *)bannerView {
-    [self gadState:TCLGADBannerStateOfDidDismissScreen];
+    [self gadState:TCLGADBannerStateOfDidDismissScreen banner:nil];
 }
 
 - (void)dealloc {

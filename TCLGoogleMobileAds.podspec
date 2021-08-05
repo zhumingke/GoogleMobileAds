@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TCLGoogleMobileAds'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'TCLGoogleMobileAds.'
 
 # This description is used to generate tags and improve search results.
@@ -20,6 +20,7 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
                         横幅、插页、原生、激励广告
                         指定Google-Mobile-Ads-SDK版本 ‘8.8.0’
+                        横幅广告自定义尺寸
                        DESC
 
   s.homepage         = 'http://gitlab09.tclking.com/ios/compents/tclgooglemobileads'
