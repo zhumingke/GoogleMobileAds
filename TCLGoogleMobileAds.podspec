@@ -23,11 +23,11 @@ Pod::Spec.new do |s|
                         横幅广告自定义尺寸
                        DESC
 
-  s.homepage         = 'http://gitlab09.tclking.com/ios/compents/tclgooglemobileads'
+  s.homepage         = 'https://github.com/zhumingke/GoogleMobileAds'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'zhumingke' => 'mingke.zhu@tcl.com' }
-  s.source           = { :git => 'http://gitlab09.tclking.com/ios/compents/tclgooglemobileads.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/zhumingke/GoogleMobileAds.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
