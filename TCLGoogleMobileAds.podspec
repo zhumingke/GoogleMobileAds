@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TCLGoogleMobileAds'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'TCLGoogleMobileAds.'
 
 # This description is used to generate tags and improve search results.
@@ -23,11 +23,11 @@ Pod::Spec.new do |s|
                         横幅广告自定义尺寸
                        DESC
 
-  s.homepage         = 'https://github.com/zhumingke/GoogleMobileAds'
+  s.homepage         = 'http://gitlab09.tclking.com/ios/compents/tclgooglemobileads'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'zhumingke' => 'mingke.zhu@tcl.com' }
-  s.source           = { :git => 'https://github.com/zhumingke/GoogleMobileAds.git', :tag => s.version.to_s }
+  s.source           = { :git => 'http://gitlab09.tclking.com/ios/compents/tclgooglemobileads.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
